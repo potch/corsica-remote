@@ -66,13 +66,12 @@
       <button data-command="https://moz-commute.herokuapp.com/">Commuter Info</button>
       <button data-command="https://forecast.io/embed/#lat=37.3874&lon=-122.0602&name=Mozilla%20Mountain%20View&color=#E66000 zoom=300">Weather</button>
       <button data-command="http://moz-rooms-mv.herokuapp.com/">Conference Rooms</button>
-      <button class="puppy" data-command="https://openpuppies.com/">Puppy!</button>
+      <button data-command="https://openpuppies.com/">Puppy!</button>
       <div class="count"></div>
     </div>
     <script>
       var server = 'http://corsica.mozilla.io/';
       var screen = decodeURIComponent(queryParams(location.search).screen);
-      var puppies = parseInt(localStorage.getItem('puppies'), 10) || 0;
 
       function sendCommand(command) {
 
