@@ -106,18 +106,6 @@
         var command = tgt.getAttribute('data-command');
         if (command) {
           sendCommand(command);
-          if (tgt.classList.contains('puppy')) {
-            puppies++;
-            localStorage.setItem('puppies', puppies);
-            if (puppies % 10 === 0) {
-              var pEl = document.querySelector('.count');
-              pEl.innerHTML = puppies + ' puppies served!';
-              pEl.classList.add('show');
-              setTimeout(function () {
-                pEl.classList.remove('show');
-              }, 3000);
-            }
-          }
         }
         checkFullScreen();
       }
